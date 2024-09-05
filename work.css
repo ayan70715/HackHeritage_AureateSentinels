@@ -1,0 +1,106 @@
+.Work{
+    width: 80%;
+    min-height: 40vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.upload_div{
+    margin-top: 4%;
+    width: 13%;
+    height: 5vh;
+    border: 1px solid rgb(1, 241, 101);
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.2px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .upload_div p{
+    font-size: 200%;    
+    font-family: Monospace;
+    font-variant: monospace-bold;
+  
+  
+  }
+  
+  .upload_div:hover{
+    cursor: pointer;
+  }
+  
+  .upload_div:active{
+    animation-name: upload;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes upload {
+    from{
+      transform: scale(1);
+    }  
+    to{
+      transform: scale(0.8);
+    }
+  }
+  
+  .up_img{
+    width: 20%;
+    height: 80%;
+    border-radius: 60%;
+    margin-right: 1.8%;
+    /* background-color: aqua; */
+    background-image: url("upload-img.png");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .imageField{
+    padding: 2%;
+    margin-top: 5vh;
+    width: 70%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(219, 217, 217, 0.1);
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    border-radius: 50px;
+  }
+  
+  .ip-images{
+    width: 80%;
+    min-height: 50vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .ips{
+    margin-top: 2%;
+    width: 100%;
+    min-height: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    flex-wrap: wrap;
+  }
+
+  .uploaded-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
