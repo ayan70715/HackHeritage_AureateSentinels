@@ -1,0 +1,214 @@
+.app{
+  min-width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title{
+  margin-top: 2%;
+  width: 100vw;
+  height: 40vh;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.prjct-name{
+  font-size: 7em;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  background-image: url("/src/assets/gold1.jpg");
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;    
+  transition: all 1s ease-in;
+  animation-name: title_colors;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes title_colors{
+  0%{
+    background-image: url("/src/assets/gold1.jpg"); 
+}
+
+25%{
+    background-image: url("/src/assets/gold2.jpg"); 
+}
+
+50%{
+    background-image: url("/src/assets/gold3.jpg"); 
+}
+
+75%{
+    background-image: url("/src/assets/gold4.jpg"); 
+}
+
+100%{
+    background-image: url("/src/assets/gold1.jpg"); 
+}
+}
+
+.about{
+  padding: 2%;
+  width: 80em;
+  text-align: center;
+  height: auto;
+  /* border: 2px solid blue; */
+  background-color: rgba(102, 99, 99, 0.2);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px rgb(34, 33, 33);
+  
+}
+
+
+.about p{
+  text-align: center;
+  font-size: 2em;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;    
+  background-image: url("/src/assets/bg-img5.jpg");
+  
+}
+
+.about p:hover{
+  transition: all 1s ease-in;
+  animation-name: title_colors2;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes title_colors2{
+  0%{
+      background-image: url("/src/assets/bg-img5.jpg"); 
+  }
+  
+  25%{
+      background-image: url("/src/assets/title-bg2.jpg"); 
+  }
+  
+  50%{
+      background-image: url("/src/assets/title-bg3.jpg"); 
+  }
+  
+  75%{
+      background-image: url("/src/assets/title-bg4.jpg"); 
+  }
+  
+  100%{
+      background-image: url("/src/assets/title-bg1.jpg"); 
+  }
+  
+}
+
+
+
+.upload_div{
+  margin-top: 4%;
+  width: 12%;
+  height: 6vh;
+  /* border: 1px solid rgb(1, 241, 101); */
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0.2px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.upload_div p{
+  font-size: 200%;    
+  font-family: Monospace;
+  font-variant: monospace-bold;
+
+
+}
+
+.upload_div:hover{
+  cursor: pointer;
+}
+
+.upload_div:active{
+  animation-name: upload;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes upload {
+  from{
+    transform: scale(1);
+  }  
+  to{
+    transform: scale(0.8);
+  }
+}
+
+.up_img{
+  width: 20%;
+  height: 80%;
+  border-radius: 60%;
+  margin-right: 1.8%;
+  /* background-color: aqua; */
+  background-image: url("upload-img.png");
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.imageField{
+  padding: 2%;
+  margin-top: 5vh;
+  width: 70%;
+  height: auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(219, 217, 217, 0.1);
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  border-radius: 50px;
+}
+
+.ip-images{
+  width: 80%;
+  min-height: 50vh;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ips{
+  margin-top: 2%;
+  width: 100%;
+  min-height: 80%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  flex-wrap: wrap;
+}
+
